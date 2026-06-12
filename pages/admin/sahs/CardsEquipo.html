@@ -8,22 +8,18 @@
 
   <h1>Cards del Equipo</h1>
 
-  <h2>Login</h2>
-  Email: <input type="text" id="inp-email" /><br><br>
-  Contraseña: <input type="password" id="inp-pass" /><br><br>
-  <button id="btn-ingresar">Ingresar</button>
-  <p id="lbl-sesion"></p>
+  <button onclick="window.location.href='../../pages/login/index.html'">
+    Ir al Login</button> 
 
   <hr>
-
-  <div id="panel-cards" style="display:none;">
 
     <h2>Cards</h2>
     ID del equipo: <input type="number" id="inp-team-id" />
     <button id="btn-cargar">Cargar Cards</button>
     <button id="btn-nueva-card">Nueva Card</button>
     <p id="msg-cards"></p>
-    <div id="contenedor-cards"></div>
+
+    <ul id="contenedor-cards"></ul>
 
     <hr>
 
@@ -39,8 +35,7 @@
       <p id="msg-form-card"></p>
     </div>
 
-  </div>
-
-  <script src="CardsEquipo.js"></script>
+ 
+  <script type="module" src="CardsEquipo.js"></script>
 </body>
 </html>
